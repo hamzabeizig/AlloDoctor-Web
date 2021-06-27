@@ -1,3 +1,18 @@
+##############################################################################
+
+AlloDoctor-Web
+
+Ceci est le code FRONTEND de l'application mobile AlloDoctor devellopée en React Js NB : Cette Application exisite en Version Mobile (Consulter la repository nommée 'AlloDoctor-Mobile')
+
+AlloDoctor est une application pour la prise de rendez-vous medicaux
+
+Developpeur : BEIZIG HAMZA
+
+##############################################################################
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
