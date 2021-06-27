@@ -1,0 +1,257 @@
+@import '~antd/dist/antd.css';
+
+.App {
+    text-align: left;
+    overflow:hidden;
+    position: fixed;
+
+}
+.contt {
+    overflow: auto;
+    height: 600px;/*..very important if you want scroll bar...*/
+
+}
+.Apps {
+    align-self: center;
+    position: fixed;
+
+}
+.App {
+    align-self: center;
+
+}
+.formulairepage2 {
+    justify-content: center;
+}
+.pageinscrii {
+    justify-content: center;
+}
+.App-logo {
+    height: 40vmin;
+}
+
+.App-header {
+    background-color: #2f7795;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #09d3ac;
+}
+.text0 {
+    color: #ffffff;
+}
+body {
+    margin: 0;
+    background: #151616;
+    font-family: Georgia;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+:root {
+    --bg: #ffffff;
+    --bg-accent: #484a4d;
+    --text-color: #26282a;
+    --nav-size: 60px;
+    --border: 1px solid #ffffff;
+    --border-radius: 8px;
+    --speed: 500ms;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;;
+}
+
+/* Top Navigation Bar */
+
+/* <nav> */
+.navbar {
+    height: var(--nav-size);
+    background-color: var(--bg);
+    padding: 0 1rem;
+    border-bottom: var(--border);
+}
+
+.navbar-nav {
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* <li> */
+.nav-item {
+    width: calc(var(--nav-size) * 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Icon Button */
+.icon-button {
+    --button-size: calc(var(--nav-size) * 0.5);
+    width: var(--button-size);
+    height: var(--button-size);
+    background-color: #c6cace;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: filter 300ms;
+}
+
+.icon-button:hover {
+    filter: brightness(1.2);
+}
+
+.icon-button svg {
+    fill: var(--text-color);
+    width: 20px;
+    height: 20px;
+}
+
+
+/* Dropdown Menu */
+
+.dropdown {
+    position: absolute;
+    top: 70px;
+    width: 300px;
+    min-height: 180px;
+    transform: translateX(-45%);
+    background-color: var(--bg);
+    border: var(--border);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    overflow: hidden;
+    transition: height var(--speed) ease;
+}
+
+.menu {
+    width: 100%;
+}
+
+.menu-item {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: var(--border-radius);
+    transition: background var(--speed);
+    padding: 0.5rem;
+}
+
+.menu-item .icon-button {
+    margin-right: 0.5rem;
+}
+
+
+.menu-item .icon-button:hover {
+    filter: none;
+}
+
+.menu-item:hover {
+    background-color: #e0e0e0;
+}
+
+.icon-right {
+    margin-left: auto;
+}
+
+/* CSSTransition classes  */
+.menu-primary-enter {
+    position: absolute;
+    transform: translateX(-110%);
+}
+.menu-primary-enter-active {
+    transform: translateX(0%);
+    transition: all var(--speed) ease;
+}
+.menu-primary-exit {
+    position: absolute;
+}
+.menu-primary-exit-active {
+    transform: translateX(-110%);
+    transition: all var(--speed) ease;
+}
+
+
+.menu-secondary-enter {
+    transform: translateX(110%);
+}
+.menu-secondary-enter-active {
+    transform: translateX(0%);
+    transition: all var(--speed) ease;
+}
+.menu-secondary-exit {
+
+}
+.menu-secondary-exit-active {
+    transform: translateX(110%);
+    transition: all var(--speed) ease;
+}
+
+
+
+
+.no-suggestions {
+    color: #999;
+    padding: 0.5rem;
+}
+
+.suggestions {
+    border: 1px solid #999;
+    border-top-width: 0;
+    list-style: none;
+    margin-top: 0;
+    max-height: 150px;
+    overflow-y: auto;
+    padding-left: 0;
+    width: calc(400px + 1rem);
+}
+.suggestions2 {
+    border: 1px solid #999;
+    border-top-width: 0;
+    list-style: none;
+    margin-top: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    padding-left: 0;
+    width: calc(850px + 1rem);
+}
+.suggestions li {
+    padding: 0.5rem;
+}
+
+.suggestion-active,
+.suggestions li:hover {
+    background-color: #c7ccd4;
+    color: #515151;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.suggestions li:not(:last-of-type) {
+    border-bottom: 1px solid #999;
+}
